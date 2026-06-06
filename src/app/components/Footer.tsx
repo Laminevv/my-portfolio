@@ -17,7 +17,7 @@ export function Footer() {
           </div>
 
           <p className="text-foreground/70" style={{ fontSize: '0.875rem' }}>
-            © 2026 Full-Stack Developer & Automation Expert. All rights reserved.
+            © 2026 Mohamed Chibout. All rights reserved.
           </p>
         </div>
       </div>
