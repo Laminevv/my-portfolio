@@ -2,8 +2,8 @@ import { motion } from 'motion/react';
 
 export function About() {
   return (
-    <section className="py-20 px-6">
-      <div className="max-w-6xl mx-auto">
+    <section className="relative overflow-hidden py-20 px-6">
+      <div className="relative z-10 max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
