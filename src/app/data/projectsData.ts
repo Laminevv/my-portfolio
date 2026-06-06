@@ -22,7 +22,7 @@ export const projects: Project[] = [
     title: 'Khidma Platform',
     description:
       'A freelance marketplace built for the Maghreb market, connecting local talent with clients through real-time messaging, escrow payments, and AI-powered job matching.',
-    tags: ['Next.js', 'Supabase', 'Stripe', 'AI'],
+    tags: ['Next.js', 'Supabase', 'Chargily Pay', 'AI'],
     gradient: 'from-primary to-secondary',
     featured: true,
     image: khidmaImg,

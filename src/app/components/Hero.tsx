@@ -1,5 +1,6 @@
 import { ArrowRight, Code2, Workflow } from 'lucide-react';
 import { motion } from 'motion/react';
+import profilePhoto from '@/assets/images/profile-photo.png';
 
 export function Hero() {
   return (
@@ -16,6 +17,31 @@ export function Hero() {
           transition={{ duration: 0.6 }}
           className="mb-8"
         >
+          <div className="relative flex justify-center mb-8">
+            {/* Outer glow ring — animated */}
+            <div className="absolute inset-0 rounded-full bg-teal-400/20 blur-2xl scale-110 animate-pulse" />
+
+            {/* Rotating border ring */}
+            <div
+              className="absolute inset-[-4px] rounded-full"
+              style={{
+                background: 'conic-gradient(from 0deg, #2dd4bf, transparent, #2dd4bf, transparent)',
+                animation: 'spin 6s linear infinite',
+              }}
+            />
+
+            {/* Photo container */}
+            <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-2 border-teal-400/40 shadow-[0_0_40px_rgba(45,212,191,0.3)] hover:shadow-[0_0_60px_rgba(45,212,191,0.5)] transition-shadow duration-500"
+              style={{ animation: 'float 4s ease-in-out infinite' }}
+            >
+              <img
+                src={profilePhoto}
+                alt="Mohamed Chibout"
+                className="w-full h-full object-cover object-top"
+              />
+            </div>
+          </div>
+
           <div className="flex items-center justify-center gap-4 mb-6">
             <div className="p-3 border border-secondary rounded-xl bg-secondary/10 backdrop-blur-sm">
               <Code2 className="w-6 h-6 text-primary" />
