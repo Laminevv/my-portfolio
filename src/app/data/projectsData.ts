@@ -33,8 +33,8 @@ export const projects: Project[] = [
   {
     title: 'Mouse Attack Landing Page & Automation',
     description:
-      'A high-converting landing page integrated with advanced n8n backend automation to handle lead routing, event triggers, and real-time data parsing.',
-    tags: ['n8n', 'Next.js', 'Node.js', 'Webhooks'],
+      'A sleek, high-converting Arabic product landing page for the Attack Shark X11 gaming mouse, featuring detailed specs, pricing, and a streamlined order flow.',
+    tags: ['Next.js', 'Landing Page', 'E-commerce', 'UI/UX'],
     gradient: 'from-secondary to-primary',
     featured: true,
     image: mouseAttackImg,
