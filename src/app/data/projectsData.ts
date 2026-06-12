@@ -1,9 +1,9 @@
 import khidmaImg from '../../assets/images/khidma.png';
 import mouseAttackImg from '../../assets/images/mouse-attack.png';
-import jobnimbusImg from '../../assets/images/jobnimbus.jpg';
-import leadQualificationImg from '../../assets/images/lead-qualification.png';
-import rosImg from '../../assets/images/ros.png';
-import messengerImg from '../../assets/images/massenger.png';
+import jobnimbusImg from '../../assets/images/khamsat_n8n_portfolio.png';
+import restaurantImg from '../../assets/images/portfolio_restaurant.png';
+import chatbotImg from '../../assets/images/portfolio_chatbot.png';
+import inventoryImg from '../../assets/images/portfolio_inventory.png';
 
 export interface Project {
   title: string;
@@ -31,7 +31,7 @@ export const projects: Project[] = [
     brandColor: '#059669',
   },
   {
-    title: 'Mouse Attack Landing Page & Automation',
+    title: 'Mouse Attack Landing Page',
     description:
       'A sleek, high-converting Arabic product landing page for the Attack Shark X11 gaming mouse, featuring detailed specs, pricing, and a streamlined order flow.',
     tags: ['Next.js', 'Landing Page', 'E-commerce', 'UI/UX'],
@@ -43,10 +43,10 @@ export const projects: Project[] = [
     brandColor: '#2563eb',
   },
   {
-    title: 'JobNimbus CRM Integration',
+    title: 'JobNimbus → QuickBooks Sync Workflow',
     description:
-      'Data synchronization workflow between JobNimbus and QuickBooks Online using n8n, eliminating manual accounting overhead.',
-    tags: ['n8n', 'CRM', 'QuickBooks', 'API'],
+      'Automated 3-way sync between JobNimbus CRM and QuickBooks Online — zero manual entry. Customers synced automatically, invoices with duplicate protection, merchant fees handled via clearing, and real-time payment reconciliation with error notifications.',
+    tags: ['n8n', 'JobNimbus API', 'QuickBooks API', 'Automation'],
     gradient: 'from-primary/80 to-secondary/80',
     featured: false,
     image: jobnimbusImg,
@@ -55,39 +55,39 @@ export const projects: Project[] = [
     brandColor: '#7c3aed',
   },
   {
-    title: 'Lead Qualification System',
+    title: 'Restaurant Order Management System',
     description:
-      'Advanced n8n backend automation designed to handle lead routing, qualify prospects, and parse real-time data efficiently.',
-    tags: ['n8n', 'Webhooks', 'Lead Gen', 'Node.js'],
+      'Automates the full order journey — from customer to kitchen to waiter, with daily AI-powered reports. Receives and saves orders instantly, notifies kitchen via Telegram in real-time, tracks order status, and generates automated daily reports with AI analytics.',
+    tags: ['n8n', 'Telegram API', 'Database', 'AI Analytics'],
     gradient: 'from-secondary/80 to-primary/80',
     featured: false,
-    image: leadQualificationImg,
-    liveLink: null,
-    githubLink: null,
-    brandColor: '#166534',
-  },
-  {
-    title: 'Restaurant Ordering System',
-    description:
-      'An intelligent automated workflow managing live food service orders, customer notifications, and inventory updates.',
-    tags: ['n8n', 'Database', 'Automation', 'Telegram API'],
-    gradient: 'from-primary to-secondary',
-    featured: false,
-    image: rosImg,
+    image: restaurantImg,
     liveLink: null,
     githubLink: null,
     brandColor: '#b45309',
   },
   {
-    title: 'Messenger AI Chatbot',
+    title: 'AI-Powered Messenger Chatbot',
     description:
-      'Intelligent conversational AI bot for Facebook Messenger designed to automate customer support, handle inquiries, and manage orders in real-time.',
-    tags: ['n8n', 'Messenger API', 'Chatbot', 'Automation'],
-    gradient: 'from-secondary to-primary',
+      'An intelligent AI Agent that replies naturally, remembers conversations, and pulls data from your spreadsheet. Features conversation memory across sessions, fetches product data from Google Sheets, sends emails automatically via Gmail, and connects directly to Messenger via Facebook API.',
+    tags: ['n8n', 'OpenAI', 'Messenger API', 'Google Sheets'],
+    gradient: 'from-primary to-secondary',
     featured: false,
-    image: messengerImg,
+    image: chatbotImg,
     liveLink: null,
     githubLink: null,
     brandColor: '#1e3a5f',
+  },
+  {
+    title: 'Inventory & Sales Automation',
+    description:
+      'Full automation for sales operations, stock tracking, and invoice generation with instant Telegram notifications. Receives orders automatically via Webhook, checks and reduces stock in real-time, auto-generates invoices, and sends email alerts when stock runs low.',
+    tags: ['n8n', 'Inventory Management', 'Telegram API', 'Webhooks'],
+    gradient: 'from-secondary to-primary',
+    featured: false,
+    image: inventoryImg,
+    liveLink: null,
+    githubLink: null,
+    brandColor: '#166534',
   },
 ];
